@@ -4,8 +4,8 @@ This is "Built a Portfolio Site" Project, as part of Udacity's "Front End Develo
 
 # Running
 
-* To see online - [Link to Portfolio site](https://github.com/PurpleBooth)
-* To see locally - clone the [Project](https://github.com/PurpleBooth) from GitHub and run Index.html file
+* To see online - [Link to Portfolio site](https://zhandosgithub.github.io/)
+* To see locally - clone the [Project](https://github.com/ZhandosGitHub/ZhandosGitHub.github.io) from GitHub and run Index.html file
 
 # Authors
 
