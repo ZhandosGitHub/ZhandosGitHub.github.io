@@ -16,7 +16,7 @@ Cameron Pittman, Udacity Course Developer
 cameron *at* udacity *dot* com
 */
 
-//TODO: Add the comment
+//Moved out items variable to avoid multiple initializations
 var items;
 
 // As you may have realized, this website randomly generates pizzas.
