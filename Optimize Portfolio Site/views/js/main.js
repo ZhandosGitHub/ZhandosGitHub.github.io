@@ -532,7 +532,7 @@ document.addEventListener('DOMContentLoaded', function() {
   var elem;
 
   //Replaced document.querySelector with document.getElementById for better performance
-  var movingPizza= document.getElementById("movingPizzas1")
+  var movingPizza= document.getElementById("movingPizzas1");
 
   //Reduced number of pizza elements from 200 to 40 to optime performance
   for (var i = 0; i < 40; i++) {
