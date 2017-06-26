@@ -465,7 +465,7 @@ window.performance.mark("mark_start_generating"); // collect timing data
 var pizzasDiv = document.getElementById("randomPizzas");
 
 // This for-loop actually creates and appends all of the pizzas when the page loads
-for (var i = 2; i < 100; i++) { 
+for (var i = 2; i < 100; i++) {
   pizzasDiv.appendChild(pizzaElementGenerator(i));
 }
 
@@ -483,7 +483,7 @@ var frame = 0;
 function logAverageFrame(times) {   // times is the array of User Timing measurements from updatePositions()
   var numberOfEntries = times.length;
   var sum = 0;
-  
+
   for (var i = numberOfEntries - 1; i > numberOfEntries - 11; i--) {
     sum = sum + times[i].duration;
   }
@@ -501,7 +501,7 @@ function updatePositions() {
   window.performance.mark("mark_start_frame");
 
   //Replaced document.querySelectorAll with document.getelementsbyclassname to optimize DOM scanning
-  //var 
+  //var
 
   var scrollingTopBy1250 = (document.body.scrollTop / 1250);
   var itemsLength = items.length;
@@ -527,7 +527,7 @@ window.addEventListener('scroll', updatePositions);
 
 // Generates the sliding pizzas when the page loads.
 document.addEventListener('DOMContentLoaded', function() {
-  
+
   // Moved "elem" out of for loop to avoid intiazling the variable on each iteration
   var elem;
 
@@ -541,9 +541,9 @@ document.addEventListener('DOMContentLoaded', function() {
     elem.src = "images/pizza.png";
     elem.style.height = "100px";
     elem.style.width = "73.333px";
-    elem.basicLeft = (i % 8) * 256; //Replaced cols and s with static values of 8 and 256
+    elem.style.left = (i % 8) * 256 + 'px'; //Replaced cols and s with static values of 8 and 256, and named it "left"
     elem.style.top = (Math.floor(i / 8) * 256) + 'px'; //Replaced cols and s with static values of 8 and 256
-    
+
     //Replaced document.querySelector with document.getElementById for better performance
     movingPizza.appendChild(elem);
   }
