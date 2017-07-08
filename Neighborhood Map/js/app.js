@@ -25,6 +25,13 @@ var locations = [{
         }
     },
     {
+        name: 'Makena Beach',
+        coordinates: {
+            lat: 20.624042,
+            lng: -156.428622
+        }
+    },
+    {
         name: 'Baldwin Beach Park',
         coordinates: {
             lat: 20.9131,
@@ -36,6 +43,27 @@ var locations = [{
         coordinates: {
             lat: 20.8091,
             lng: -156.6156
+        }
+    },
+    {
+        name: 'Charley Young Beach',
+        coordinates: {
+            lat: 20.7246,
+            lng: -156.4491
+        }
+    },
+    {
+        name: 'Wailea Beach',
+        coordinates: {
+            lat: 20.6828,
+            lng: -156.4430
+        }
+    },
+    {
+        name: 'Keawakapu Beach',
+        coordinates: {
+            lat: 20.7040,
+            lng: -156.4463
         }
     },
     {
@@ -81,8 +109,8 @@ function initMap() {
 
     // create map object to display on site with specific coordinates
     map = new google.maps.Map(document.getElementById("map"), {
-        center: {lat: 20.8911, lng: -156.5047},
-        zoom: 11
+        center: {lat: 20.8911, lng: -156.3926},
+        zoom: 10
     });
 
     // create an InfoWindow object to attach to each marker
